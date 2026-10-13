@@ -597,5 +597,30 @@ updateLine();
 
 document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+  <!-- Navbar -->
+    <header class="bg-slate-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-amber-500 text-slate-900 font-black px-3 py-1.5 rounded-lg text-xl tracking-wider">OvoPur</div>
+                <div>
+                    <h1 class="font-bold text-lg leading-tight">Gestion de Production & Stock</h1>
+                    <p class="text-xs text-slate-400">Ligne de Transformation Ovoproduits Liquides (SANOVO)</p>
+                </div>
+            </div>
+
+            <!-- 🟢 COLLEZ LE COMPTEUR ICI (dans la barre du haut) -->
+            <div id="visitor-counter-box" class="flex items-center bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 text-xs">
+                <i class="fa-solid fa-eye text-sky-400 mr-2"></i>
+                <span class="text-slate-300 mr-1">Visites :</span>
+                <strong id="visit-count" class="text-sky-400">Chargement...</strong>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <span class="bg-emerald-500/20 text-emerald-400 text-xs px-3 py-1 rounded-full border border-emerald-500/30 font-medium">
+                    <i class="fa-solid fa-circle text-[8px] mr-1.5 animate-pulse"></i>Ligne SANOVO Opérationnelle
+                </span>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
